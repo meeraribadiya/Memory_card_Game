@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="game.css">
+  <script src="game.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="timer">Time: 00:00</div>
+    <div class="moves">Moves: 0</div>
+    <div class="score">Score: 0</div>
+    <div class="reset"><button>New Game</button></div>
+  </div>
+
+  <div class="left">
+    <div class="grid">
+      <!-- 16 cards -->
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+  </div>
+
+  <!-- last section (cards diable and massage print ) -->
+  <div class="win-box">
+    <div>
+      <h2>🎉 Congratulations!</h2>
+      <p>You completed the game</p>
+
+      <div class="final-stats">
+        <p>Time: <span class="final-time">00:00</span></p>
+        <p>Moves: <span class="final-moves">0</span></p>
+        <p>Score: <span class="final-score">0</span></p>
+      </div>
+
+      <button class="play-again">Play Again</button>
+    </div>
+  </div>
+
+</body>
+
+</html>

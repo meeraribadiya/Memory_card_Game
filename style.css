@@ -1,0 +1,210 @@
+* {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+/* page - 1 */
+/* for full body  */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #e4e5de;
+}
+
+/* title  */
+.heading {
+    height: 100px;
+    font-size: larger;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(75, 89, 48);
+}
+
+.subtitle {
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.rules-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* full box  */
+.contanier {
+    padding: 0px 30px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.2);
+    background-color: #f2f2f2;
+    letter-spacing: normal;
+
+}
+
+button {
+    height: 50px;
+    width: 75%;
+    font-weight: bolder;
+    font-size: larger;
+    border-radius: 25px;
+    background-color: rgb(208, 209, 183);
+    box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.2);
+    border: none;
+
+}
+
+button:hover {
+    background-color: rgb(162, 169, 121);
+
+
+}
+
+/* rules of game  */
+.game-rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+.game-rules li {
+    list-style: circle;
+}
+
+/* Responsive Design - Media Queries */
+
+/* Tablet and smaller devices */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .contanier {
+        padding: 15px 20px 20px 20px;
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .heading {
+        height: auto;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .heading h1 {
+        font-size: 1.8em;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .game-rules {
+        padding-bottom: 15px;
+    }
+
+    .game-rules h2 {
+        font-size: 1.3em;
+    }
+
+    .game-rules ul {
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .game-rules li {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    button {
+        width: 85%;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .contanier {
+        padding: 15px;
+        width: 95%;
+        border-radius: 15px;
+    }
+
+    .heading {
+        height: auto;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .heading h1 {
+        font-size: 1.5em;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        padding: 0;
+    }
+
+    .game-rules h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .game-rules ul {
+        padding-left: 15px;
+        margin: 0;
+    }
+
+    .game-rules li {
+        font-size: 13px;
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+
+    button {
+        width: 90%;
+        height: 45px;
+        font-size: 15px;
+    }
+}
+
+/* Very small mobile devices */
+@media screen and (max-width: 360px) {
+    .contanier {
+        padding: 10px;
+    }
+
+    .heading h1 {
+        font-size: 1.3em;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .game-rules h2 {
+        font-size: 1.1em;
+    }
+
+    .game-rules li {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        height: 40px;
+    }
+}

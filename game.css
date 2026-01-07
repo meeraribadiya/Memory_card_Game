@@ -1,0 +1,226 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* horizontally center container */
+    align-items: center;
+    height: 100vh;
+    background-color: #e6e6e1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    border-radius: 5px;
+}
+
+.navbar .timer,
+.navbar .moves,
+.navbar .score {
+    font-weight: bold;
+}
+
+.navbar .reset {
+    margin-left: auto;
+}
+
+.navbar .reset button {
+    padding: 8px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(208, 209, 183);
+    cursor: pointer;
+}
+
+.navbar .reset button:hover {
+    background-color: rgb(162, 169, 121);
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    width: 500px;
+    box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    /* 4 columns */
+    grid-template-rows: repeat(4, 80px);
+    /* 4 rows */
+    gap: 10px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #444343;
+    background-image: url('images/back-card.png');
+    background-size: cover;
+    /*  card cover  */
+    background-position: center;
+    /* center*/
+    background-repeat: no-repeat;
+    width: 80px;
+    /* grid size */
+    height: 80px;
+    border-radius: 5px;
+}
+
+/* last section  */
+.win-box {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+
+    display: none; /* default hidden */
+
+    justify-content: center;
+    align-items: center;
+}
+
+.win-box > div {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Responsive Design - Media Queries */
+
+/* Tablet and smaller devices */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .navbar {
+        width: 100%;
+        max-width: 500px;
+        padding: 12px 20px;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .navbar .timer,
+    .navbar .moves,
+    .navbar .score {
+        font-size: 14px;
+    }
+
+    .navbar .reset button {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+
+    .left {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: repeat(4, 70px);
+        gap: 8px;
+    }
+
+    .card {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        width: 90%;
+    }
+
+    .navbar .timer,
+    .navbar .moves,
+    .navbar .score,
+    .navbar .reset {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .reset {
+        margin-left: 0;
+    }
+
+    .navbar .reset button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 60px);
+        grid-template-rows: repeat(4, 60px);
+        gap: 6px;
+    }
+
+    .card {
+        width: 60px;
+        height: 60px;
+    }
+
+    .win-box > div {
+        padding: 20px;
+        margin: 20px;
+        max-width: 90%;
+    }
+}
+
+/* Very small mobile devices */
+@media screen and (max-width: 360px) {
+    .grid {
+        grid-template-columns: repeat(4, 50px);
+        grid-template-rows: repeat(4, 50px);
+        gap: 5px;
+    }
+
+    .card {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar .timer,
+    .navbar .moves,
+    .navbar .score {
+        font-size: 12px;
+    }
+}
