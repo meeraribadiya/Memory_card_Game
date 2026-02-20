@@ -36,14 +36,15 @@ All game logic runs completely on the client side.
 
 
 ## How to Run Project
+
+-You can open with the help of live link.
 1. Download or clone the project repository
 2. Open the project folder
 3. Run the project using:
    - VS Code Live Server extension  
    - OR open `index.html` directly in any modern browser
 4. No backend or database setup required
-   OR**
--You can open with the help of live link.
+  
 
 
 ## Conclusion
@@ -54,6 +55,7 @@ It shows how a complete interactive game can be built using only frontend techno
 
 ## Developed By
 Mira Ribadiya
+
 
 
 
