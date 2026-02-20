@@ -45,7 +45,22 @@ All game logic runs completely on the client side.
    - OR open `index.html` directly in any modern browser
 4. No backend or database setup required
   
+## Project Structure
 
+MEMORY_CARD_GAME/
+│
+├── index.html
+├── game.html
+├── style.css
+├── game.css
+├── game.js
+├── README.md
+│
+├── images/
+│   └── back-card.png
+│
+└── .vscode/
+    └── settings.json
 
 ## Conclusion
 This project is ideal for beginners to practice JavaScript fundamentals such as DOM manipulation, event handling, and basic game logic.  
@@ -55,6 +70,7 @@ It shows how a complete interactive game can be built using only frontend techno
 
 ## Developed By
 Mira Ribadiya
+
 
 
 
