@@ -46,8 +46,8 @@ All game logic runs completely on the client side.
 4. No backend or database setup required
   
 ## Project Structure
-
-```MEMORY_CARD_GAME/
+```
+MEMORY_CARD_GAME/
 │
 ├── index.html
 ├── game.html
@@ -71,6 +71,7 @@ It shows how a complete interactive game can be built using only frontend techno
 
 ## Developed By
 Mira Ribadiya
+
 
 
 
