@@ -47,7 +47,7 @@ All game logic runs completely on the client side.
   
 ## Project Structure
 
-MEMORY_CARD_GAME/
+```MEMORY_CARD_GAME/
 │
 ├── index.html
 ├── game.html
@@ -61,6 +61,7 @@ MEMORY_CARD_GAME/
 │
 └── .vscode/
     └── settings.json
+```
 
 ## Conclusion
 This project is ideal for beginners to practice JavaScript fundamentals such as DOM manipulation, event handling, and basic game logic.  
@@ -70,6 +71,7 @@ It shows how a complete interactive game can be built using only frontend techno
 
 ## Developed By
 Mira Ribadiya
+
 
 
 
