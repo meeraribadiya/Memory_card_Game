@@ -58,9 +58,7 @@ MEMORY_CARD_GAME/
 │
 ├── images/
 │   └── back-card.png
-│
-└── .vscode/
-    └── settings.json
+
 ```
 
 ## Conclusion
@@ -71,6 +69,7 @@ It shows how a complete interactive game can be built using only frontend techno
 
 ## Developed By
 Mira Ribadiya
+
 
 
 
