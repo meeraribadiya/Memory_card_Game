@@ -42,6 +42,8 @@ All game logic runs completely on the client side.
    - VS Code Live Server extension  
    - OR open `index.html` directly in any modern browser
 4. No backend or database setup required
+   OR
+Use can open with the help of live link.
 
 
 ## Conclusion
@@ -52,3 +54,4 @@ It shows how a complete interactive game can be built using only frontend techno
 
 ## Developed By
 Mira Ribadiya
+
